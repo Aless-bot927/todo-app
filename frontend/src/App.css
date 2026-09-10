@@ -1,0 +1,108 @@
+
+/* Contenedor principal */
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Formulario */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+/* Campos de texto */
+input,
+textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Efecto al seleccionar un campo */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1a53e3;
+}
+
+/* Tamaño del área de descripción */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Botones */
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+  opacity: 0.85;
+}
+
+/* Sección de tareas */
+.task-list {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+/* Cada tarea */
+.task {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 15px;
+}
+
+/* Título de cada tarea */
+.task h3 {
+  margin: 0 0 8px;
+}
+
+/* Descripción y estado */
+.task p {
+  margin: 8px 0;
+}
+
+/* Botones de las tareas */
+.task button {
+  margin-top: 10px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+  .app {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  button {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
