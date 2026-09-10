@@ -43,6 +43,29 @@ La aplicación permite:
 
 ---
 
+## API REST
+
+El backend utiliza **Django REST Framework** para proporcionar una API REST que permite administrar las tareas.
+
+Endpoint principal:
+
+```text
+http://127.0.0.1:8000/api/tasks/
+```
+
+Las principales operaciones de la API son:
+
+| Método      | Función                       |
+| ----------- | ----------------------------- |
+| GET         | Consultar las tareas          |
+| POST        | Crear una nueva tarea         |
+| PUT / PATCH | Editar o actualizar una tarea |
+| DELETE      | Eliminar una tarea            |
+
+El frontend desarrollado con React consume esta API para mostrar y modificar las tareas desde la interfaz de usuario.
+
+---
+
 ## Estructura del proyecto
 
 El proyecto está separado en un **backend** y un **frontend**, para mantener una organización clara del código.
@@ -102,8 +125,6 @@ git clone https://github.com/Aless-bot927/todo-app.git
 cd todo-app
 ```
 
----
-
 ### 2. Ejecutar el backend
 
 Entrar a la carpeta del backend:
@@ -112,7 +133,7 @@ Entrar a la carpeta del backend:
 cd backend
 ```
 
-Instalar las dependencias de Python:
+Instalar las dependencias:
 
 ```bash
 pip install -r requirements.txt
@@ -136,17 +157,15 @@ El backend estará disponible en:
 http://127.0.0.1:8000/
 ```
 
-La API de tareas se encuentra en:
+La API de tareas estará disponible en:
 
 ```text
 http://127.0.0.1:8000/api/tasks/
 ```
 
----
-
 ### 3. Ejecutar el frontend
 
-Abrir **otra terminal** y regresar a la carpeta principal del proyecto:
+Abrir **otra terminal** y entrar a la carpeta del frontend:
 
 ```bash
 cd todo-app/frontend
